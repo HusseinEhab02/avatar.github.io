@@ -1,0 +1,117 @@
+/* small */
+@media (max-width : 768px){
+    .container{
+        width: 750px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .header ul{
+        width: 80%;
+        margin: auto;
+    }
+    .logo{
+        font-size: 60px;
+    }
+    .content h2{
+        font-size: 20px;
+        position: absolute;
+        bottom: 200px;
+        margin: auto;
+        display: none;
+    }
+}
+/* medium */
+@media (max-width : 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large */
+@media (max-width : 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+body{
+    background-image:linear-gradient(to right ,#01022d ,black);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    height: 640px;
+    background-image:linear-gradient(to right ,#01022de5 30% , rgba(0, 0, 0, 0.76)), url(./avimg/avatarimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* to avoid leaving empty area */
+    background-position:center;
+}
+.container:hover{
+    background-image:linear-gradient(to right ,#01022de5 30% , transparent), url(./avimg/avatarimg.jpg);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+a:hover{
+    border-bottom-color: white;
+}
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* must add a width */
+    width: 60%;
+}
+ul li{
+    margin: 0 8px;
+}
+.content{
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+    color: white;
+}
+.content h2{
+    font-size: 100px;
+    text-transform: uppercase;
+
+}
+.content p{
+    letter-spacing: 3px;
+    width: 350px;
+    padding: 20px 0;
+}
+button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
